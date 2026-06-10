@@ -1,0 +1,10 @@
+services:
+  - type: static
+    name: portfolio
+    env: static
+    repo: https://github.com/muthu-13/portfolio
+    branch: main
+    buildCommand: ""
+    publishPath: /
+    autoDeploy: true
+    plan: free

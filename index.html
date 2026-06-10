@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muthammal V - Full Stack Developer portfolio showcasing skills, education, internships, projects, certifications, and contact details." />
+  <meta name="keywords" content="Muthammal V, Full Stack Developer, React, Node.js, Portfolio, Tenkasi, Tamil Nadu" />
+  <meta name="author" content="Muthammal V" />
+  <meta name="theme-color" content="#0f5bd7" />
+  <meta property="og:title" content="Muthammal V | Full Stack Developer Portfolio" />
+  <meta property="og:description" content="Modern, responsive personal portfolio for Muthammal V, Full Stack Developer." />
+  <meta property="og:type" content="website" />
+  <title>Muthammal V | Full Stack Developer</title>
+  <link rel="icon" href="assets/icons/favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__ring"></div>
+    <p>Loading portfolio</p>
+  </div>
+
+  <header class="header" id="top">
+    <nav class="navbar container" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Muthammal V home">MV</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-menu" id="navMenu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#internships">Internships</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon"></i>
+          <span>Mode</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero__bg"></div>
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Portfolio of Muthammal V</p>
+          <h1>Full Stack Developer crafting polished web experiences.</h1>
+          <p class="hero__typing-wrap">
+            <span class="hero__static">I build</span>
+            <span class="hero__typing" id="typingText" aria-live="polite"></span>
+          </p>
+          <p class="hero__summary">
+            Aspiring Full Stack Developer with hands-on experience in React.js, Node.js, Express.js, MySQL, and MongoDB, focused on responsive design, smooth workflows, and strong problem-solving.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="assets/resume/Muthammal_V_Resume.pdf" download>Download Resume</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat-card glass">
+              <strong>2000+</strong>
+              <span>Problems Solved</span>
+            </div>
+            <div class="stat-card glass">
+              <strong>2</strong>
+              <span>Internships</span>
+            </div>
+            <div class="stat-card glass">
+              <strong>3</strong>
+              <span>Featured Projects</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual reveal">
+          <div class="profile-card glass">
+            <div class="profile-card__image-wrap">
+              <img src="assets/images/profile.jpg" alt="Muthammal V portrait" class="profile-card__image" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
+              <div class="profile-card__fallback" aria-hidden="true">
+                <span>MV</span>
+              </div>
+            </div>
+            <div class="profile-card__info">
+              <h2>Muthammal V</h2>
+              <p>Full Stack Developer</p>
+              <div class="profile-card__meta">
+                <span><i class="fa-solid fa-location-dot"></i> Tenkasi, Tamil Nadu</span>
+                <span><i class="fa-solid fa-envelope"></i> 2312103@nec.edu.in</span>
+              </div>
+            </div>
+          </div>
+          <div class="floating-chip floating-chip--one glass">React.js</div>
+          <div class="floating-chip floating-chip--two glass">Node.js</div>
+          <div class="floating-chip floating-chip--three glass">MongoDB</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="about">
+      <div class="container grid-two reveal">
+        <div>
+          <p class="section-label">About Me</p>
+          <h2>Building systems that feel fast, reliable, and easy to use.</h2>
+        </div>
+        <div class="glass card card--spacious">
+          <p>
+            I am an aspiring Full Stack Developer from Tenkasi, Tamil Nadu, with practical experience in modern web development across frontend, backend, and database layers. I enjoy solving real-world problems with clean UI, structured APIs, and scalable application design.
+          </p>
+          <p>
+            My work reflects a strong interest in software engineering, database management systems, and building responsive products that create a professional user experience.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Skills</p>
+          <h2>Technology stack across product, data, and testing.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card glass reveal">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>C</li>
+              <li>C++</li>
+              <li>Java</li>
+              <li>Python</li>
+            </ul>
+          </article>
+          <article class="skill-card glass reveal">
+            <i class="fa-solid fa-database"></i>
+            <h3>Databases</h3>
+            <ul>
+              <li>SQL</li>
+              <li>MongoDB</li>
+              <li>NoSQL</li>
+            </ul>
+          </article>
+          <article class="skill-card glass reveal">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3>Frameworks</h3>
+            <ul>
+              <li>Django</li>
+              <li>Flask</li>
+            </ul>
+          </article>
+          <article class="skill-card glass reveal">
+            <i class="fa-solid fa-globe"></i>
+            <h3>Frontend & Backend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Node.js</li>
+              <li>Express.js</li>
+            </ul>
+          </article>
+          <article class="skill-card glass reveal">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+            <h3>Mobile</h3>
+            <ul>
+              <li>Flutter</li>
+            </ul>
+          </article>
+          <article class="skill-card glass reveal">
+            <i class="fa-solid fa-vial-circle-check"></i>
+            <h3>Testing</h3>
+            <ul>
+              <li>Jira</li>
+              <li>Jest</li>
+              <li>Playwright</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="education">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Education Timeline</p>
+          <h2>Academic foundation focused on engineering and discipline.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item glass reveal">
+            <span class="timeline-item__dot"></span>
+            <div>
+              <p class="timeline-item__institution">National Engineering College, Kovilpatti</p>
+              <h3>B.E Computer Science and Engineering</h3>
+              <p>CGPA: 7.26</p>
+            </div>
+          </article>
+          <article class="timeline-item glass reveal">
+            <span class="timeline-item__dot"></span>
+            <div>
+              <p class="timeline-item__institution">S.R.M Government Girls Higher Secondary School</p>
+              <h3>Higher Secondary Education</h3>
+              <p>Percentage: 82.8%</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="internships">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Internship Experience</p>
+          <h2>Practical exposure through focused web development tasks.</h2>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card glass reveal">
+            <div class="experience-card__header">
+              <i class="fa-solid fa-briefcase"></i>
+              <div>
+                <h3>CodSoft Web Development Intern</h3>
+                <p>Web Development</p>
+              </div>
+            </div>
+            <ul>
+              <li>Developed Portfolio Website</li>
+              <li>Developed Landing Page</li>
+              <li>Developed Calculator Application</li>
+              <li>Improved responsiveness and user experience</li>
+            </ul>
+          </article>
+          <article class="experience-card glass reveal">
+            <div class="experience-card__header">
+              <i class="fa-solid fa-rocket"></i>
+              <div>
+                <h3>Prodigy Infotech Web Development Intern</h3>
+                <p>Interactive Web Applications</p>
+              </div>
+            </div>
+            <ul>
+              <li>Developed Stopwatch Application</li>
+              <li>Developed Tic-Tac-Toe Game</li>
+              <li>Implemented DOM Manipulation and Event Handling</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Projects</p>
+          <h2>Selected work combining software logic, analytics, and user experience.</h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card glass reveal">
+            <div class="project-card__image project-card__image--bridal" role="img" aria-label="Bridal Service Management System preview">
+              <img src="assets/images/bridal-project.png" alt="Bridal Service Management System preview" onerror="this.style.display='none';" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__title-row">
+                <h3>Bridal Service Management System</h3>
+                <span class="project-card__badge">MERN Stack</span>
+              </div>
+              <p>Booking, payment, workshop, inventory, analytics dashboard, and role-based authentication for a complete service workflow.</p>
+              <div class="tech-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </article>
+          <article class="project-card glass reveal">
+            <div class="project-card__image project-card__image--iot" role="img" aria-label="Optimizing Energy Consumption Using IoT-Based Systems preview">
+              <img src="assets/images/iot-project.png" alt="Optimizing Energy Consumption Using IoT-Based Systems preview" onerror="this.style.display='none';" />
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__title-row">
+                <h3>Optimizing Energy Consumption Using IoT-Based Systems</h3>
+                <span class="project-card__badge">IoT + AI</span>
+              </div>
+              <p>Smart energy monitoring with LSTM-based prediction, real-time analytics, anomaly detection, and electricity bill forecasting.</p>
+              <div class="tech-tags">
+                <span>React.js</span>
+                <span>Node.js</span>
+                <span>PostgreSQL</span>
+                <span>Python</span>
+                <span>ESP32</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="section-label">Certifications</p>
+          <h2>Verified learning that supports strong engineering fundamentals.</h2>
+        </div>
+        <div class="certificate-grid">
+          <article class="certificate-card glass reveal">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Database Management System</h3>
+            <p>Infosys Springboard</p>
+          </article>
+          <article class="certificate-card glass reveal">
+            <i class="fa-solid fa-leaf"></i>
+            <h3>MongoDB Basics Certification</h3>
+            <p>MongoDB University</p>
+          </article>
+          <article class="certificate-card glass reveal">
+            <i class="fa-solid fa-network-wired"></i>
+            <h3>Network Addressing and Basic Troubleshooting</h3>
+            <p>Cisco Networking Academy</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="achievements">
+      <div class="container grid-two reveal">
+        <div>
+          <p class="section-label">Achievements</p>
+          <h2>Consistent practice and problem solving at scale.</h2>
+        </div>
+        <div class="glass card card--spacious">
+          <div class="achievement-highlight">
+            <span>2000+</span>
+            <p>Programming problems solved on SkillRack.</p>
+          </div>
+          <p>
+            This achievement reflects persistence, algorithmic thinking, and a strong habit of structured practice. It supports my growth as a developer who can reason through logic and build reliable software.
+          </p>
+          <div class="interest-list">
+            <span>Full Stack Development</span>
+            <span>Database Management Systems</span>
+            <span>Software Engineering</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <p class="section-label">Contact</p>
+          <h2>Let’s connect for opportunities, projects, or collaboration.</h2>
+          <p>Open to internships, software roles, and project-based opportunities where I can contribute and continue learning.</p>
+          <div class="contact-links">
+            <a href="tel:7094223081"><i class="fa-solid fa-phone"></i> 7094223081</a>
+            <a href="mailto:2312103@nec.edu.in"><i class="fa-solid fa-envelope"></i> 2312103@nec.edu.in</a>
+            <span><i class="fa-solid fa-location-dot"></i> Tenkasi, Tamil Nadu</span>
+          </div>
+        </div>
+        <form class="contact-form glass reveal" id="contactForm" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="Your email" />
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
+          </div>
+          <button class="btn btn--primary btn--full" type="submit">Send Message</button>
+          <p class="form-feedback" id="formFeedback" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Muthammal V. All rights reserved.</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

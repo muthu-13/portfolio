@@ -1,0 +1,28 @@
+# Ignore common system files and IDE folders
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node and dependency folders (if ever used)
+node_modules/
+
+# Logs
+npm-debug.log*
+.yarn-debug.log*
+.yarn-error.log*
+
+# OS generated files
+Icon?
+
+# Build outputs
+dist/
+build/
+
+# Temp files
+*.tmp
+
+# MacOS
+._*
+
+# Windows
+desktop.ini

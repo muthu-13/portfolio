@@ -142,8 +142,37 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    formFeedback.textContent = 'Message validated successfully. Connect through email for direct communication.';
+    // Send form to Formspree endpoint (set to provided form id)
+    const FORM_ENDPOINT = 'https://formspree.io/f/xykadpyy';
+
+    formFeedback.textContent = 'Sending message...';
     formFeedback.style.color = '#16a34a';
-    contactForm.reset();
+
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ name, _replyto: email, message })
+    })
+    .then(async (res) => {
+      if (res.ok) {
+        formFeedback.textContent = 'Message sent — thank you!';
+        formFeedback.style.color = '#16a34a';
+        contactForm.reset();
+        // Redirect to a thank-you page after a short delay
+        setTimeout(() => { window.location.href = 'thank-you.html'; }, 900);
+      } else {
+        const data = await res.json().catch(() => ({}));
+        const err = (data && data.error) ? data.error : 'Failed to send message. Please try again later.';
+        formFeedback.textContent = err;
+        formFeedback.style.color = '#dc2626';
+      }
+    })
+    .catch(() => {
+      formFeedback.textContent = 'Network error. Please check your connection and try again.';
+      formFeedback.style.color = '#dc2626';
+    });
   });
 });

@@ -7,7 +7,7 @@ A premium, modern, and fully responsive personal portfolio website built with on
 - `index.html`
 - `assets/css/style.css`
 - `assets/js/script.js`
-- `assets/images/profile.jpg`
+- `assets/images/profile.jpeg`
 - `assets/images/bridal-project.png`
 - `assets/images/iot-project.png`
 - `assets/resume/Muthammal_V_Resume.pdf`

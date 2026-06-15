@@ -27,6 +27,7 @@
   <header class="header" id="top">
     <nav class="navbar container" aria-label="Primary">
       <a class="brand" href="#home" aria-label="Muthammal V home">MV</a>
+      <span class="brand-label">Muthammal V</span>
       <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="navMenu">
         <span></span>
         <span></span>
@@ -65,7 +66,7 @@
           </p>
           <div class="hero__actions">
             <a class="btn btn--primary" href="#projects">View Projects</a>
-            <a class="btn btn--ghost" href="assets/resume/Muthammal_V_Resume.pdf" download>Download Resume</a>
+            <a class="btn btn--ghost" href="assets/resume/Muthammal%20V_Resume.pdf" download>Download Resume</a>
           </div>
           <div class="hero__stats">
             <div class="stat-card glass">
@@ -85,7 +86,7 @@
         <div class="hero__visual reveal">
           <div class="profile-card glass">
             <div class="profile-card__image-wrap">
-              <img src="assets/images/profile.jpg" alt="Muthammal V portrait" class="profile-card__image" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
+              <img src="assets/images/profile.jpeg" alt="Muthammal V portrait" class="profile-card__image" onerror="this.style.display='none';this.nextElementSibling.style.display='grid';" />
               <div class="profile-card__fallback" aria-hidden="true">
                 <span>MV</span>
               </div>
@@ -265,7 +266,7 @@
         <div class="project-grid">
           <article class="project-card glass reveal">
             <div class="project-card__image project-card__image--bridal" role="img" aria-label="Bridal Service Management System preview">
-              <img src="assets/images/bridal-project.png" alt="Bridal Service Management System preview" onerror="this.style.display='none';" />
+              <img src="assets/images/bridal_image.jpg" alt="Bridal Service Management System preview" onerror="this.style.display='none';" />
             </div>
             <div class="project-card__body">
               <div class="project-card__title-row">
@@ -283,7 +284,7 @@
           </article>
           <article class="project-card glass reveal">
             <div class="project-card__image project-card__image--iot" role="img" aria-label="Optimizing Energy Consumption Using IoT-Based Systems preview">
-              <img src="assets/images/iot-project.png" alt="Optimizing Energy Consumption Using IoT-Based Systems preview" onerror="this.style.display='none';" />
+              <img src="assets/images/iot_image.jpg" alt="Optimizing Energy Consumption Using IoT-Based Systems preview" onerror="this.style.display='none';" />
             </div>
             <div class="project-card__body">
               <div class="project-card__title-row">
@@ -312,19 +313,28 @@
         </div>
         <div class="certificate-grid">
           <article class="certificate-card glass reveal">
-            <i class="fa-solid fa-certificate"></i>
-            <h3>Database Management System</h3>
-            <p>Infosys Springboard</p>
+            <i class="fa-solid fa-database"></i>
+            <h3>Database Management System Part - 1</h3>
+            <p><strong>Organization:</strong> Infosys Springboard</p>
+            <p><strong>Date:</strong> April 2025</p>
+            <p>Learned database fundamentals, ER modeling, relational databases, SQL queries, keys, constraints, and database design principles.</p>
+            <a class="btn btn--ghost" href="https://drive.google.com/file/d/1iKpz0NDDR6M5FMY0HGXB1CJIhUoU9jsP/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View Certificate</a>
           </article>
           <article class="certificate-card glass reveal">
-            <i class="fa-solid fa-leaf"></i>
-            <h3>MongoDB Basics Certification</h3>
-            <p>MongoDB University</p>
+            <i class="fa-solid fa-database"></i>
+            <h3>MongoDB Basics for Students</h3>
+            <p><strong>Organization:</strong> MongoDB Inc.</p>
+            <p><strong>Date:</strong> April 2025</p>
+            <p>Learned MongoDB fundamentals including NoSQL concepts, collections, documents, CRUD operations, indexing, and efficient database management.</p>
+            <a class="btn btn--ghost" href="https://drive.google.com/file/d/1-IiamSVcvZBfVF_lYHLlgBBhvq0zOZql/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View Certificate</a>
           </article>
           <article class="certificate-card glass reveal">
             <i class="fa-solid fa-network-wired"></i>
             <h3>Network Addressing and Basic Troubleshooting</h3>
-            <p>Cisco Networking Academy</p>
+            <p><strong>Organization:</strong> Cisco Networking Academy</p>
+            <p><strong>Date:</strong> November 2024</p>
+            <p>Acquired networking fundamentals including IPv4/IPv6 addressing, routers, switches, network connectivity, troubleshooting techniques, and communication protocols.</p>
+            <a class="btn btn--ghost" href="https://drive.google.com/file/d/1_69LpM8geegsDNtE8Wv_SQqwxJnGQRUg/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">View Certificate</a>
           </article>
         </div>
       </div>
@@ -346,8 +356,7 @@
           </p>
           <div class="interest-list">
             <span>Full Stack Development</span>
-            <span>Database Management Systems</span>
-            <span>Software Engineering</span>
+            <span>Software Testing</span>
           </div>
         </div>
       </div>
@@ -385,8 +394,42 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
+      <div class="footer__brand">
+        <a class="brand footer__logo" href="#home" aria-label="Muthammal V home">MV</a>
+        <div class="footer__brand-info">
+          <p class="footer__title">Muthammal V</p>
+          <p class="footer__tag">Full Stack Developer — Tenkasi, Tamil Nadu</p>
+        </div>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <a href="tel:7094223081"><i class="fa-solid fa-phone"></i> 7094223081</a>
+          <a href="mailto:2312103@nec.edu.in"><i class="fa-solid fa-envelope"></i> 2312103@nec.edu.in</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <a href="#projects">Projects</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Follow</h4>
+          <div class="social">
+            <a href="https://github.com/muthu-13" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/muthammal-v-6ab6b0349" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="Twitter" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__meta">
       <p>© <span id="year"></span> Muthammal V. All rights reserved.</p>
       <a href="#home">Back to top</a>
     </div>
